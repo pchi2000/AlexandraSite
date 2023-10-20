@@ -1,0 +1,14 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+      <nav>
+        <ul>
+          <li><a routerLink="/home">Home</a></li>
+          <li><a routerLink="/books">Book List</a></li>
+          <li><a routerLink="/pictures">Pictures</a></li>
+          <li><a routerLink="/memories">Memories</a></li>
+        </ul>
+      </nav>
+  </mat-menu>
+  

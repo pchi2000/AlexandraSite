@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./mobile-home-page.component.css']
 })
 export class MobileHomePageComponent {
-
+  imageUrl = 'assets/home-background.jpg'; 
+  textContent = 'Your dynamic text goes here.';
 }

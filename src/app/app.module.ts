@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +16,7 @@ import { MobileBooksPageComponent } from './mobile-app/mobile-books-page/mobile-
 import { MobilePicturesPageComponent } from './mobile-app/mobile-pictures-page/mobile-pictures-page.component';
 import { MobileMemoriesPageComponent } from './mobile-app/mobile-memories-page/mobile-memories-page.component';
 import { MobileNavigationTabComponent } from './mobile-app/mobile-navigation-tab/mobile-navigation-tab.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { MobileNavigationTabComponent } from './mobile-app/mobile-navigation-tab
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatMenuModule, 
+    MatIconModule, 
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
