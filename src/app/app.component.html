@@ -1,2 +1,9 @@
-<app-web-navigation-tab></app-web-navigation-tab>
+<div>
+    <ng-container *ngIf="isPhone; else webNavigation">
+      <app-mobile-navigation-tab></app-mobile-navigation-tab>
+    </ng-container>
+    <ng-template #webNavigation>
+      <app-web-navigation-tab></app-web-navigation-tab>
+    </ng-template>
+</div>
 <router-outlet></router-outlet>
