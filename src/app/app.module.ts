@@ -3,20 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { BooksPageComponent } from './books-page/books-page.component';
-import { NavigationTabComponent } from './navigation-tab/navigation-tab.component';
-import { PicturesPageComponent } from './pictures-page/pictures-page.component';
-import { MemoriesPageComponent } from './memories-page/memories-page.component';
+import { WebHomePageComponent } from './web-app/web-home-page/web-home-page.component';
+import { WebBooksPageComponent } from './web-app/web-books-page/web-books-page.component';
+import { WebPicturesPageComponent } from './web-app/web-pictures-page/web-pictures-page.component';
+import { WebMemoriesPageComponent } from './web-app/web-memories-page/web-memories-page.component';
+import { WebNavigationTabComponent } from './web-app/web-navigation-tab/web-navigation-tab.component';
+import { MobileHomePageComponent } from './mobile-app/mobile-home-page/mobile-home-page.component';
+import { MobileBooksPageComponent } from './mobile-app/mobile-books-page/mobile-books-page.component';
+import { MobilePicturesPageComponent } from './mobile-app/mobile-pictures-page/mobile-pictures-page.component';
+import { MobileMemoriesPageComponent } from './mobile-app/mobile-memories-page/mobile-memories-page.component';
+import { MobileNavigationTabComponent } from './mobile-app/mobile-navigation-tab/mobile-navigation-tab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent,
-    BooksPageComponent,
-    NavigationTabComponent,
-    PicturesPageComponent,
-    MemoriesPageComponent
+    WebHomePageComponent,
+    WebBooksPageComponent,
+    WebPicturesPageComponent,
+    WebMemoriesPageComponent,
+    WebNavigationTabComponent,
+    MobileHomePageComponent,
+    MobileBooksPageComponent,
+    MobilePicturesPageComponent,
+    MobileMemoriesPageComponent,
+    MobileNavigationTabComponent,
   ],
   imports: [
     BrowserModule,
