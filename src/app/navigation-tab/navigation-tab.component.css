@@ -1,0 +1,30 @@
+.nav-container {
+  display: flex;
+  justify-content: center; 
+  height: fit-content;
+}
+
+nav {
+  width: 90%;
+  background-color: #333;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 15px;
+  margin: 0px;
+  display: flex; /* Make the list items display horizontally */
+  justify-content: space-evenly /* Adjust spacing as needed */
+}
+
+li {
+  padding: 0px
+}
+
+a {
+  text-decoration-line: underline;
+  text-decoration-style: solid; /* this is default */
+  color: #fff;
+  font-size: xx-large;
+}
