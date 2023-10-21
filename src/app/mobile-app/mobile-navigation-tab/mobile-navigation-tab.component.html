@@ -1,14 +1,21 @@
-<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-    <mat-icon>menu</mat-icon>
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Naviagation Bars">
+  <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="'/home'">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
   </button>
-  <mat-menu #menu="matMenu">
-      <nav>
-        <ul>
-          <li><a routerLink="/home">Home</a></li>
-          <li><a routerLink="/books">Book List</a></li>
-          <li><a routerLink="/pictures">Pictures</a></li>
-          <li><a routerLink="/memories">Memories</a></li>
-        </ul>
-      </nav>
-  </mat-menu>
-  
+  <button mat-menu-item [routerLink]="'/books'">
+    <mat-icon>my_library_books</mat-icon>
+    <span>Book List</span>
+  </button>
+  <button mat-menu-item [routerLink]="'/pictures'">
+    <mat-icon>photo</mat-icon>
+    <span>Pictures</span>
+  </button>
+  <button mat-menu-item [routerLink]="'/memories'">
+    <mat-icon>favorite</mat-icon>
+    <span>Memories</span>
+  </button>
+</mat-menu>

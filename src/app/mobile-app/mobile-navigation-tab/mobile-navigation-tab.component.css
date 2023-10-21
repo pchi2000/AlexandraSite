@@ -1,8 +1,11 @@
-ul {
-    list-style: none;
-}
 
-a {
-    color: #fff;
-    font-size: xx-large;
-}
+  
+  .menu-icon {
+    font-size: 24px;
+    margin-right: 8px; /* Add spacing between the icon and text */
+  }
+  
+  .menu-text {
+    font-size: 16px; /* Adjust the size of the text */
+    flex: 1;
+  }
