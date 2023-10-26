@@ -1,1 +1,8 @@
 <p>web-books-page works!</p>
+<input [(ngModel)]="searchQuery" (input)="searchBooks()" placeholder="Search for books">
+    <button (click)="searchBooks()">Search</button>
+    <ul>
+      <li *ngFor="let book of books">
+        {{ book.volumeInfo.title }}
+      </li>
+    </ul>

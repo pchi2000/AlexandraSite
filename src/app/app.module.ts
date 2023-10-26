@@ -17,6 +17,8 @@ import { MobilePicturesPageComponent } from './mobile-app/mobile-pictures-page/m
 import { MobileMemoriesPageComponent } from './mobile-app/mobile-memories-page/mobile-memories-page.component';
 import { MobileNavigationTabComponent } from './mobile-app/mobile-navigation-tab/mobile-navigation-tab.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatMenuModule, 
     MatIconModule, 
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
